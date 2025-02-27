@@ -11,5 +11,56 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body></body>
+  <body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto bg-gray-200 py-6">
+      <header>
+        <nav class="flex justify-center items-center mt-24">
+          <div
+            class="flex justify-center items-center mt-10 relative w-9/12 mb-10"
+          >
+            <img class="w-48 absolute" src="images/bg.png" alt="" />
+            <img class="w-16" src="images/Group.png" alt="" />
+          </div>
+        </nav>
+
+        <!-- login form -->
+        <div
+          class="card bg-base-100 w-full mx-auto max-w-sm shrink-0 shadow-2xl"
+        >
+          <form class="card-body">
+            <fieldset class="fieldset">
+              <label class="fieldset-label text-lg font-bold text-black"
+                >Mobile Number</label
+              >
+              <input
+                value="01928294516"
+                id="Account-number"
+                type="number"
+                class="input"
+                placeholder="Enter your number"
+              />
+              <label class="fieldset-label text-lg font-bold text-black"
+                >4 Digit Pin</label
+              >
+              <input
+                value="1234"
+                id="pin"
+                type="text"
+                class="input"
+                placeholder="Password"
+              />
+              <div><a class="link link-hover">Forgot password?</a></div>
+              <button
+                id="btn-login"
+                class="btn btn-neutral bg-[#0874F2] border-none mt-4"
+              >
+                Login
+              </button>
+            </fieldset>
+          </form>
+        </div>
+      </header>
+    </section>
+    <script src="js/payoo.js"></script>
+  </body>
 </html>
