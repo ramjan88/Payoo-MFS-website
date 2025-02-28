@@ -22,7 +22,7 @@
                 <img class="w-16" src="images/Group.png" alt="" />
               </div>
               <div class="space-y-2">
-                <h1 class="text-2xl font-bold">$45000</h1>
+                <h1 class="text-2xl font-bold">$ <span id="main-balance">4500</span></h1>
                 <p>Available Balance</p>
               </div>
             </div>
@@ -41,11 +41,11 @@
           </p>
         </div>
         <div class="card grid grid-cols-3 gap-3 mt-6 cursor-pointer">
-          <div class="box border text-center p-4 rounded-lg">
+          <div id="add-money" class="box border text-center p-4 rounded-lg">
             <img class="mx-auto" src="images/add money.png" alt="" />
             <h3 class="">Add money</h3>
           </div>
-          <div class="box border text-center p-4 rounded-lg">
+          <div id="cashout-money" class="box border text-center p-4 rounded-lg">
             <img class="mx-auto" src="images/cashout.png" alt="" />
             <h3 class="">CashOut</h3>
           </div>
@@ -68,7 +68,7 @@
         </div>
       </section>
       <!-- add money form -->
-      <section class="p-4">
+      <section id="addMoney" class="p-4">
         <h1 class="text-2xl mb-4 font-bold">Add Money</h1>
         <div
           class="card bg-base-100 w-full mx-auto max-w-sm shrink-0 shadow-2xl"
@@ -86,8 +86,7 @@
                 >Bank Account Number</label
               >
               <input
-              
-                id="Account-number"
+                id="Account-number" value="01928294516"
                 type="number"
                 class="input"
                 placeholder="Enter 11 digits account number"
@@ -96,8 +95,7 @@
                 >Account to Add</label
               >
               <input
-              
-                id="Account-number"
+                id="amount"
                 type="number"
                 class="input"
                 placeholder="Add Amount to withdraw"
@@ -106,15 +104,14 @@
                 >Pin Number</label
               >
               <input
-              
-                id="pin"
+                id="pin" value="1234"
                 type="text"
                 class="input"
                 placeholder="Enter 4 digits Pin Number"
               />
               <div><a class="link link-hover">Forgot password?</a></div>
               <button
-                id="btn-login"
+                id="btn-add-money"
                 class="btn btn-neutral bg-[#0874F2] border-none mt-4"
               >
                 Add Money
@@ -123,6 +120,54 @@
           </form>
         </div>
       </section>
+
+      <section id="cashout" class="p-4">
+        <h1 class="text-2xl mb-4 font-bold">CashOut</h1>
+        <div
+          class="card bg-base-100 w-full mx-auto max-w-sm shrink-0 shadow-2xl"
+        >
+          <form class="card-body">
+            <fieldset class="fieldset">
+              <label class="fieldset-label text-lg font-bold text-black"
+                >Agent Number</label
+              >
+              <input
+                id="Account-number" value="01928294516"
+                type="number"
+                class="input"
+                placeholder="Enter 11 digits account number"
+              />
+              <label class="fieldset-label text-lg font-bold text-black"
+                >Account</label
+              >
+              <input
+                id="amount"
+                type="number"
+                class="input"
+                placeholder="Add Amount to withdraw"
+              />
+              <label class="fieldset-label text-lg font-bold text-black"
+                >Pin Number</label
+              >
+              <input
+                id="pin" value="1234"
+                type="text"
+                class="input"
+                placeholder="Enter 4 digits Pin Number"
+              />
+              <div><a class="link link-hover">Forgot password?</a></div>
+              <button
+                id="cashout-money"
+                class="btn btn-neutral bg-[#0874F2] border-none mt-4"
+              >
+                CashOut
+              </button>
+            </fieldset>
+          </form>
+        </div>
+      </section>
     </section>
+    <script src="js/addMoney.js"></script>
+    <script src="js/toggle.js"></script>
   </body>
 </html>
