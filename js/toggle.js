@@ -1,3 +1,9 @@
+let addAmount = document.getElementById("addMoney");
+addAmount.style.display = "none";
+
+let cashoutAmount = document.getElementById("cashout");
+cashoutAmount.style.display = "none";
+
 document
   .getElementById("add-money")
   .addEventListener("click", function (event) {
