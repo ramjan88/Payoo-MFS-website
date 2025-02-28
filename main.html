@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>main page</title>
+    <!-- font awosome -->
+    <script
+      src="https://kit.fontawesome.com/ba7a37b7bb.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- daisyUi -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css"
@@ -22,12 +27,16 @@
                 <img class="w-16" src="images/Group.png" alt="" />
               </div>
               <div class="space-y-2">
-                <h1 class="text-2xl font-bold">$ <span id="main-balance">4500</span></h1>
+                <h1 class="text-2xl font-bold">
+                  $ <span id="main-balance">4500</span>
+                </h1>
                 <p>Available Balance</p>
               </div>
             </div>
             <div class="rounded-xl">
-              <button class="btn">Log Out</button>
+              <button class="btn">
+                <i class="fa-solid fa-right-from-bracket"></i> Log Out
+              </button>
             </div>
           </div>
         </nav>
@@ -61,7 +70,7 @@
             <img class="mx-auto" src="images/pay bill.png" alt="" />
             <h3 class="">Pay Bill</h3>
           </div>
-          <div class="box border text-center p-4 rounded-lg">
+          <div id="transaction-box" class="box border text-center p-4 rounded-lg">
             <img class="mx-auto" src="images/transaction1.png" alt="" />
             <h3 class="">Transactions</h3>
           </div>
@@ -86,7 +95,8 @@
                 >Bank Account Number</label
               >
               <input
-                id="Account-number" value="01928294516"
+                id="Account-number"
+                value="01928294516"
                 type="number"
                 class="input"
                 placeholder="Enter 11 digits account number"
@@ -104,7 +114,8 @@
                 >Pin Number</label
               >
               <input
-                id="pin" value="1234"
+                id="pin"
+                value="1234"
                 type="text"
                 class="input"
                 placeholder="Enter 4 digits Pin Number"
@@ -132,7 +143,8 @@
                 >Agent Number</label
               >
               <input
-                id="Account-number" value="01928294516"
+                id="cashout-number"
+                value="01928294516"
                 type="number"
                 class="input"
                 placeholder="Enter 11 digits account number"
@@ -150,7 +162,8 @@
                 >Pin Number</label
               >
               <input
-                id="cashout-pin" value="1234"
+                id="cashout-pin"
+                value="1234"
                 type="text"
                 class="input"
                 placeholder="Enter 4 digits Pin Number"
@@ -166,9 +179,16 @@
           </form>
         </div>
       </section>
+
+      <!--  transaction section -->
+        <section id="transaction-history" class="mt-10">
+          <h1 class="text-3xl font-bold text-center ">Transactons</h1>
+          <div id="transaction-container"></div>
+        </section>
     </section>
-    <script src="js/addMoney.js"></script>
     <script src="js/toggle.js"></script>
-    <script src="js/cashout.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/utilities.js"></script>
+    <script src="js/transaction.js"></script>
   </body>
 </html>
